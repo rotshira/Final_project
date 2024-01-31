@@ -1,7 +1,5 @@
 package Geometry;
 
-import Utils.GeomUtils;
-
 /**
  * Created by Roi on 1/7/2015.
  */

@@ -10,10 +10,7 @@ import Parsing.sirf.SirfCsvWriter;
 import Parsing.sirf.SirfMLCsvWriter;
 import Parsing.sirf.SirfProtocolParser;
 import Parsing.stm.STMProtocolParser;
-import Parsing.stm.STMcsvWriter;
-import Utils.KMLgenerator;
 import dataStructres.*;
-import Parsing.nmea.NMEAProtocolParser;
 
 import java.io.IOException;
 import java.text.ParseException;

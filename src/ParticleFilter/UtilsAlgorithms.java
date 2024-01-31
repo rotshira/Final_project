@@ -4,8 +4,6 @@ package ParticleFilter;
 import GNSS.Sat;
 import GUI.KML_Generator;
 import Geometry.Point3D;
-import MachineLearning.Test;
-import Utils.GeoUtils;
 import dataStructres.NMEAPeriodicMeasurement;
 import dataStructres.NMEASVMeasurement;
 
