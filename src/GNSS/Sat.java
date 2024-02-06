@@ -7,12 +7,12 @@ import Geometry.Point3D;
  */
 public class Sat {
 
-    Point3D satPosInECEF;
-    Point3D satVelocity;
-    double azimuth, elevetion;
-    int satID;
+    Point3D satPosInECEF;//Represents the position of the satellite in Earth-Centered, Earth-Fixed (ECEF) coordinates.
+    Point3D satVelocity;//Represents the velocity of the satellite.
+    double azimuth, elevetion;//azimuth-Represents the azimuth angle of the satellite. elevetion-Represents the elevation angle of the satellite.
+    int satID;//Represents the identifier of the satellite.
     public int[] snr;
-    public int SingleSNR;
+    public int SingleSNR;//Represents the SNR of a single satellite signal.
 
 
     public Sat(Point3D satPosInECEF, double azimuth, double elevetion, int satID) {
@@ -45,12 +45,13 @@ public class Sat {
         this.SingleSNR = SNR;
     }
 
-
+    //Calculates the distance between the satellite and a given position.
     public double distanceFromSatToPos(Point3D pos)
     {
         return this.satPosInECEF.distance(pos);
     }
-
+    //Computes the azimuth and elevation angles from the satellite to a given position.
+    //Not really Computes
     public void computeAnglesfromSatToPos(Point3D pos)
     {
         this.azimuth = 0;
