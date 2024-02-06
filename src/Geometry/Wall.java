@@ -39,9 +39,9 @@ public class Wall {
 
     public static int hasIntersectionCount = 0;
     public static int has2DIntersectionCount = 0;
-
     public static int methodIntersectionCount = 0;
 
+    //This function calculates the intersection point between a 3D line (represented by Line3D object) and a wall.
     public Point3D intersectionPoint3D(Line3D line){
         methodIntersectionCount++;
         Point2D point2D = getWallAsLine().intersectionPoint(line);
@@ -58,7 +58,7 @@ public class Wall {
         hasIntersectionCount++;
         return new Point3D(point2D.getX(), point2D.getY(), zOfRay);
     }
-
+    //This function calculates the interpolated z-coordinate of a point on a line segment.
     private double interpolate(Line3D line, Point2D point2D) {
         double length = line.getP1().distance2D(line.getP2());
         double percentageInXYFromLineP1 = line.getP1().distance(point2D) / length;
@@ -80,14 +80,18 @@ public class Wall {
         return point3dArray;
     }
 
+    //This function checks if a given 3D line (ray) intersects with the wall.
     public boolean isIntersecting(Line3D ray)
     {
         //ray is given in UTM
         return intersectionPoint3D(ray) != null;
-
-
-
     }
+
+    //calculate the distance between a point on the wall and the top of the wall
+    public double distanceToTop(Point3D pointOnWall) {
+    return maxHeight - pointOnWall.getZ();
+    }
+
 }
 
 
