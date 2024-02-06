@@ -1,7 +1,7 @@
 package ParticleFilter;
 
 import GNSS.Sat;
-import GUI.KML_Generator;
+
 import Geometry.Building;
 import Geometry.BuildingsFactory;
 import Geometry.Point2D;
@@ -111,7 +111,7 @@ public class ParticleSimulation {
 
             ParticleList.initParticlesWithHeading(pivot, pivot2);
 
-        KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path3,5);
+//        KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path3,5);
 
 
             NMEAProtocolParser parser = new NMEAProtocolParser();
@@ -195,7 +195,7 @@ public class ParticleSimulation {
             }
 
        //     KML_Generator.generateKMLfromParticles(PointsInTIme, Particle_ans_path2, 20);
-            KML_Generator.Generate_kml_from_List(ans, Particle_ans_path, false);
+//            KML_Generator.Generate_kml_from_List(ans, Particle_ans_path, false);
             System.out.println("end of program");
 
 
@@ -241,7 +241,7 @@ public class ParticleSimulation {
 
         ParticleList.initParticlesWithHeading(pivot, pivot2);
 
-        KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path3,5);
+//        KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path3,5);
 
 
         NMEAProtocolParser parser = new NMEAProtocolParser();
@@ -328,7 +328,7 @@ public class ParticleSimulation {
        //NMEAPeriodicMeasurement parse(List<String> NmeaREcords)
        // {}
 
-        KML_Generator.Generate_kml_from_List(ans, Particle_ans_path, false);
+//        KML_Generator.Generate_kml_from_List(ans, Particle_ans_path, false);
         System.out.println("end of program");
 
 
@@ -380,7 +380,7 @@ public class ParticleSimulation {
 
 
         String Particle_ans_path = "KaminData\\ans_RouteTest.kml";
-        KML_Generator.Generate_kml_from_List(ans, Particle_ans_path, false);
+//        KML_Generator.Generate_kml_from_List(ans, Particle_ans_path, false);
 
 
     }
@@ -419,7 +419,7 @@ public class ParticleSimulation {
         //pivot2.offset(130, 130, 0);
 
             ParticleList.initParticles(pivot, pivot2);
-            KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path3,5);
+//            KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path3,5);
 
             NMEAProtocolParser parser = new NMEAProtocolParser();
             //String NMEAFIlePath = "KaminData\\NMEAFiles\\routeABCDtwice11AM_NMEA.txt";
@@ -474,7 +474,7 @@ public class ParticleSimulation {
 
             }
 
-             KML_Generator.Generate_kml_from_List(ans, Particle_ans_path);
+//             KML_Generator.Generate_kml_from_List(ans, Particle_ans_path);
         System.out.println("end of program");
 
 
@@ -517,7 +517,7 @@ public class ParticleSimulation {
         }
 
         String Path = "NMEA2ABCD_route.kml";
-        KML_Generator.Generate_kml_from_List(pointList,Path);
+//        KML_Generator.Generate_kml_from_List(pointList,Path);
         System.out.println("End of program");
     }
 
@@ -557,7 +557,7 @@ public class ParticleSimulation {
         String Particle_path = "KaminData\\Simulaton_routeTest_FInal";
         String Particle_path3 = "KaminData\\Simulaton_routeTest_initial.kml";
 
-        KML_Generator.Generate_kml_from_List(path, Simulation_route_3D_kml_path);
+//        KML_Generator.Generate_kml_from_List(path, Simulation_route_3D_kml_path);
         String Particle_ans_path = ".\\Data\\ans_Simulation_route_100_particles2.kml";
 
         ParticleList = new Particles();
@@ -568,7 +568,7 @@ public class ParticleSimulation {
 
 
         ParticleList.initParticles(pivot, pivot2);
-        KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path3,5);
+//        KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path3,5);
 
         NMEAProtocolParser parser = new NMEAProtocolParser();
 
@@ -608,7 +608,7 @@ public class ParticleSimulation {
             //ans.add(tmp);
             String Particle_path2=Particle_path+i+".kml";
 
-            KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path2,5);
+//            KML_Generator.Generate_kml_from_ParticleList(ParticleList, Particle_path2,5);
             //  KML_Point3D_List_Generator.Generate_kml_from_List(PointList,Particle_path2);
           //  ParticleList.ComputeAndPrintErrors(path.get(i));
 

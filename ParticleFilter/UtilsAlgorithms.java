@@ -2,7 +2,7 @@ package ParticleFilter;
 
 
 import GNSS.Sat;
-import GUI.KML_Generator;
+
 import Geometry.Point3D;
 import dataStructres.NMEAPeriodicMeasurement;
 import dataStructres.NMEASVMeasurement;
@@ -323,7 +323,7 @@ sat_data2.add(tmp);
             points.add(tmp);
 
         }
-        KML_Generator.Generate_kml_from_List(points, recons_path, false);
+//        KML_Generator.Generate_kml_from_List(points, recons_path, false);
 
 
 
@@ -338,6 +338,6 @@ sat_data2.add(tmp);
             Point3D tmp = new Point3D(lat, lon, 1);
             ans.add(tmp);
         }
-        KML_Generator.Generate_kml_from_List(ans, recons_path2, true);
+//        KML_Generator.Generate_kml_from_List(ans, recons_path2, true);
     }
 }

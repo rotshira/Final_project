@@ -10,10 +10,7 @@ import Parsing.sirf.SirfCsvWriter;
 import Parsing.sirf.SirfMLCsvWriter;
 import Parsing.sirf.SirfProtocolParser;
 import Parsing.stm.STMProtocolParser;
-import Parsing.stm.STMcsvWriter;
-
 import dataStructres.*;
-import Parsing.nmea.NMEAProtocolParser;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -166,7 +163,31 @@ public class parsingMain {
 
     }
 
+    private static void TestLosNlosAlgorithm() throws Exception {
 
+        String BuildingPath = "SingleWall2.kml";
+        System.out.println("The program begins");
+        BuildingsFactory fact = new BuildingsFactory();
+        List<Building> buildings1 = null;
+
+        buildings1 = fact.generateUTMBuildingListfromKMLfile(BuildingPath);
+        System.out.println("Number of Buildings is " + buildings1.size());
+
+        Point3D tmpPointInUTM =  new Point3D(670123.4, 3551171.47, 4);
+        Sat tmpSat = new Sat(248, 79, 1);
+        String KmlFilePath ="test.kml";
+        SirfSVMeasurement sirfMeas= new SirfSVMeasurement();
+
+//        KMLgenerator.generateSatLinesFromSat(tmpSat, tmpPointInUTM, KmlFilePath);
+
+            boolean los = LosAlgorithm.ComputeLos(tmpPointInUTM, buildings1, tmpSat);
+            System.out.println("Azimut:" + tmpSat.getAzimuth() + ". Elev:" + tmpSat.getElevetion() + " status of computation is " + los);
+
+            //tmpSat.setElevetion(tmpSat.getElevetion()+5);
+
+
+
+    }
 
 
     public static void SirfParsingML()  {

@@ -16,12 +16,12 @@ public class TestMain {
     public static void main(String[] args) throws IOException {
 
 
-        //testCord();
-        //testCord2();
-        //final File folder = new File("D:\\GoogleDrive\\Roi PhD\\JammingMafat2018\\src\\Jamming\\gps_log_1");
-        //parse2018(0,100, folder);
-        //Parse(UTC_Start_Time_First_Jam_Record, UTC_End_Time_First_Jam_Record);
-        Parse3(0,0 ,"D:\\GoogleDrive\\Roi PhD\\JammingMafat2018\\src\\Jamming\\gnss_status_2018_03_25_13_23_39_log.csv", "D:\\GoogleDrive\\Roi PhD\\JammingMafat2018\\src\\Jamming\\location_2018_03_25_13_23_39_log.csv","15");
+//        testCord();
+//        testCord2();
+//        final File folder = new File("D:\\GoogleDrive\\Roi PhD\\JammingMafat2018\\src\\Jamming\\gps_log_1");
+//        parse2018(0,100, folder);
+//        Parse(UTC_Start_Time_First_Jam_Record, UTC_End_Time_First_Jam_Record);
+//        Parse3(0,0 ,"D:\\GoogleDrive\\Roi PhD\\JammingMafat2018\\src\\Jamming\\gnss_status_2018_03_25_13_23_39_log.csv", "D:\\GoogleDrive\\Roi PhD\\JammingMafat2018\\src\\Jamming\\location_2018_03_25_13_23_39_log.csv","15");
 
     }
 
@@ -32,17 +32,17 @@ public class TestMain {
         double minLat =32.10236;
         double minLon = 35.206606;
 
-        Point3D tmp = GeoUtils.convertLATLONtoUTM(new Point3D(minLat,minLon, 0));
-        System.out.println(tmp);
+//        Point3D tmp = GeoUtils.convertLATLONtoUTM(new Point3D(minLat,minLon, 0));
+//        System.out.println(tmp);
 
         double maxLat = 32.104638;
         double maxLong =35.211922;
-        Point3D tmp2 = GeoUtils.convertLATLONtoUTM(new Point3D(maxLat,maxLong, 0));
-        System.out.println(tmp2);
-        System.out.println(tmp.getX()- tmp2.getX());
-        System.out.println(tmp.getY()-tmp2.getY());
+//        Point3D tmp2 = GeoUtils.convertLATLONtoUTM(new Point3D(maxLat,maxLong, 0));
+//        System.out.println(tmp2);
+//        System.out.println(tmp.getX()- tmp2.getX());
+//        System.out.println(tmp.getY()-tmp2.getY());
         System.out.println();
-
+//
 
     }
     private static void testCord2() {
@@ -51,16 +51,16 @@ public class TestMain {
         double minLat = 31.161083;
         double minLon = 34.530456;
 
-        Point3D tmp = GeoUtils.convertLATLONtoUTM(new Point3D(minLat,minLon, 0));
-        System.out.println(tmp);
+//        Point3D tmp = GeoUtils.convertLATLONtoUTM(new Point3D(minLat,minLon, 0));
+//        System.out.println(tmp);
 
         double maxLat = 31.164944;
         double maxLong =34.536903
                 ;
-        Point3D tmp2 = GeoUtils.convertLATLONtoUTM(new Point3D(maxLat,maxLong, 0));
-        System.out.println(tmp2);
-        System.out.println(tmp.getX()- tmp2.getX());
-        System.out.println(tmp.getY()-tmp2.getY());
+//        Point3D tmp2 = GeoUtils.convertLATLONtoUTM(new Point3D(maxLat,maxLong, 0));
+//        System.out.println(tmp2);
+//        System.out.println(tmp.getX()- tmp2.getX());
+//        System.out.println(tmp.getY()-tmp2.getY());
 
 
 

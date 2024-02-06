@@ -186,9 +186,9 @@ public class RealClient {
     private void convertLatLongToLocalCord() {
         xPos = 0;
         yPos = 0;
-        Point3D tmp = GeoUtils.convertLATLONtoUTM(new Point3D(lat, lon, alt));
-        utmX = tmp.getX();
-        utmY = tmp.getY();
+//        Point3D tmp = GeoUtils.convertLATLONtoUTM(new Point3D(lat, lon, alt));
+//        utmX = tmp.getX();
+//        utmY = tmp.getY();
         zPos = this.alt;
     }
 
@@ -224,10 +224,10 @@ public class RealClient {
 
     public void ComputeUtm() {
 
-        Point3D tmp = GeoUtils.convertLATLONtoUTM(new Point3D(this.lat,this.lon, this.alt));
-        this.utmX = tmp.getX();
-        this.utmY = tmp.getY();
-
+//        Point3D tmp = GeoUtils.convertLATLONtoUTM(new Point3D(this.lat,this.lon, this.alt));
+//        this.utmX = tmp.getX();
+//        this.utmY = tmp.getY();
+//
 
     }
 
