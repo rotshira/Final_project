@@ -70,7 +70,7 @@ public class PseudoRangeComp {
             System.out.println(rao[i] );
         }
         Point3D userPosEcef = new Point3D(gu[0], gu[1], gu[2]);
-        userPosEcef = GeoUtils.convertECEFtoLATLON(userPosEcef);
+//        userPosEcef = GeoUtils.convertECEFtoLATLON(userPosEcef);
         System.out.println(" user pos is " + userPosEcef );
 
 
@@ -159,7 +159,7 @@ public class PseudoRangeComp {
 
         }
         Point3D userPosEcef = new Point3D(gu[0], gu[1], gu[2]);
-        userPosEcef = GeoUtils.convertECEFtoLATLON(userPosEcef);
+//        userPosEcef = GeoUtils.convertECEFtoLATLON(userPosEcef);
         System.out.println(" user pos is " + userPosEcef );
 
 

@@ -286,8 +286,8 @@ public class SirfPeriodicMeasurement implements Serializable{
     public Point3D GetPosInUTM()
     {
         Point3D result = new Point3D(this.getxPos(), this.getyPos(), this.getzPos());
-        result = GeoUtils.convertECEFtoLATLON(result); //todo ROi not sure this is optimal
-        result = GeoUtils.convertLATLONtoUTM(result);
+//        result = GeoUtils.convertECEFtoLATLON(result); //todo ROi not sure this is optimal
+//        result = GeoUtils.convertLATLONtoUTM(result);
         return result;
     }
     public void computePseudoRangeLeastSquare()

@@ -53,7 +53,7 @@ public class BuildingsFactory {
             x = Double.parseDouble(cords[idx+1]);
             z= Double.parseDouble(cords[idx+2]);
             Point3D tmpPoint = new Point3D(x, y, z);
-            tmpPoint = GeoUtils.convertLATLONtoUTM(tmpPoint);
+//            tmpPoint = GeoUtils.convertLATLONtoUTM(tmpPoint);
             buildingVertices.add(tmpPoint);
             idx+=3;
 
